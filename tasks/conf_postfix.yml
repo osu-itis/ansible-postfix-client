@@ -1,0 +1,8 @@
+---
+- name: configure postfix
+  template: src=templates/main.cf.j2 dest=/etc/postfix/main.cf owner=postfix group=postfix mode=0644
+  notify:
+    - restart postfix
+
+- name: enable postfix
+  service: name=postfix state=running enabled=yes

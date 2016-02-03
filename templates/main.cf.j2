@@ -1,0 +1,12 @@
+# {{ ansible_managed }}
+
+# Remove the you got mail! message when you login
+biff = no
+
+# Just send mail to a smarthost, nothing local
+mydomain = {{ mydomain }}
+myorigin = $mydomain
+relayhost = {{ relayhost }}
+inet_interfaces = loopback-only
+local_transport = error:local delivery is disabled
+
