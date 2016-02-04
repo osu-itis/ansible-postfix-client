@@ -1,0 +1,20 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: akeym
+  description: Postfix role to forward all local mail to smarthost
+  company: "Oregon State University"
+  min_ansible_version: 1.9
+  platforms:
+    - name: EL
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+    - name: Ubuntu
+      versions:
+      - trusty
+  galaxy_tags:
+    - mail
